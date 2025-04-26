@@ -1,0 +1,30 @@
+# Write instructions for how to vote to be displayed when player runs /vote command
+# Set empty to disable /vote command
+VoteCommandMessage: "You can edit this message in VotifierNukkit config.yml"
+
+# After how many hours votes saved for offline players expire
+# Default is 7 days (168)
+VotesExpireAfter: 168
+
+
+# Vote reward commands
+# Plugin developers can also listen for VoteReceivedEvent to execute custom actions
+# Use %p% for player name (it's quoted automatically for multi-word names) and § for colors
+# All commands are run as ConsoleCommandSender
+
+# Commands which are run instantly even if the player is not online
+OfflineCommands:
+  - say %p% just voted!
+
+# Commands which require the player to be online
+OnlineCommands:
+#  - give %p% diamond 1
+  - tell %p% §l§aThanks for voting!
+
+
+# Votifier server address and port
+# Note: You usually don't need to change the default address
+# Note: Make sure you are allowed to use the port if you use a hoisting service and that it's port forwarded
+# Server port can be used if no RCON or other servers are using it
+Address: "0.0.0.0"
+Port: 8192

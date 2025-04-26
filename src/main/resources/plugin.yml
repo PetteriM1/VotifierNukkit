@@ -1,0 +1,9 @@
+name: VotifierNukkit
+main: petterim1.votifier.Main
+version: "${pom.version}"
+api: ["1.0.0"]
+author: PetteriM1
+
+permissions:
+  votifier.vote:
+    default: true

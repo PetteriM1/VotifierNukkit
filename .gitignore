@@ -1,0 +1,11 @@
+*.class
+*.log
+hs_err_pid*
+target/
+.settings
+.project
+.classpath
+.DS_Store
+.idea
+*.iml
+.factorypath
