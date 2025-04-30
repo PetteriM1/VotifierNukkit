@@ -85,7 +85,7 @@ public class VotifierServer extends Thread {
                 position += address.length() + 1;
                 String timestamp = readString(block, position);
 
-                Main.instance.onVoteReceived(new Vote(serviceName, username, address, Long.parseLong(timestamp), System.currentTimeMillis()));
+                Main.instance.onVoteReceived(new Vote(serviceName, username, address, timestamp, System.currentTimeMillis()));
             } catch (BadPaddingException ex) {
                 Main.instance.getLogger().error("Couldn't decrypt vote, make sure public keys match", ex);
             } catch (Exception ex) {

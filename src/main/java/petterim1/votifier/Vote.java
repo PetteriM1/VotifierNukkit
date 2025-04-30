@@ -12,6 +12,6 @@ public class Vote {
     private final String serviceName;
     private final String username;
     private final String address;
-    private final long timestamp;
+    private final String timeStamp;
     private final long voteReceivedMs;
 }
