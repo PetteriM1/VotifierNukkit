@@ -50,7 +50,7 @@ public class VotifierServer extends Thread {
                     Main.instance.getLogger().debug("Connection from " + socket.getRemoteSocketAddress());
                 }
 
-                socket.setSoTimeout(5000);
+                socket.setSoTimeout(10000);
 
                 byte[] block;
 
